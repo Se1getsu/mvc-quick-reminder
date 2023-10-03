@@ -51,7 +51,7 @@ final class ReminderEditViewController: UIViewController {
     private var reminderEditView = ReminderEditView()
     
     private var editMode: EditMode!
-    private var notificationDateCalculator: NotificationDateCalculator!
+    private var notificationDateCalculator: NotificationDateCalculator
     
     struct Dependency {
         let notificationDateCalculator: NotificationDateCalculator

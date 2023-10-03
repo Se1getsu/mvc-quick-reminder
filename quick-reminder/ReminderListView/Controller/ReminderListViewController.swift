@@ -11,11 +11,11 @@ final class ReminderListViewController: UIViewController {
     private let reminderListView = ReminderListView()
     private let noReminderView = NoReminderView()
     
-    private var reminderList: ReminderListProtocol!
-    private let notificationHandler: NotificationHandlerProtocol!
-    private let notificationDateCalculator: NotificationDateCalculator!
-    private let dateProvider: DateProviderProtocol!
-    private let oldReminderRemover: OldReminderRemoverProtocol!
+    private var reminderList: ReminderListProtocol
+    private let notificationHandler: NotificationHandlerProtocol
+    private let notificationDateCalculator: NotificationDateCalculator
+    private let dateProvider: DateProviderProtocol
+    private let oldReminderRemover: OldReminderRemoverProtocol
     
     struct Dependency {
         let reminderList: ReminderListProtocol
